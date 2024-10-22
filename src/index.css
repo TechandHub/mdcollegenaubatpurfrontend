@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* .btn-primary {
+        @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
+    } */
+  }
+
+*{
+    background-color: #F7F7F7;
+}
+
+#navbar a.active {
+    color: #7e22ce;
+}
+
+@media screen and (max-width : 640px) {
+    #navbar a.active {
+        color: white;
+        background-color: #7e22ce;
+        border-radius: 4px ;
+    }
+}
+
+.paused {
+    animation-play-state: paused;
+  }
