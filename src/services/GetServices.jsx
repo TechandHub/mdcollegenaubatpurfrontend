@@ -1,7 +1,8 @@
 import axios from 'axios'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URl
 
 const api = axios.create({
-    baseURL : process.env.REACT_APP_BACKEND_URL,
+    baseURL : BACKEND_URL,
 })
 
 // Creating GET request method
